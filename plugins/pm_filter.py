@@ -1971,13 +1971,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
             buttons = [[
                 InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
+                InlineKeyboardButton('🔥ʀᴏʙɪɴ ᴄɪɴᴇᴍᴀ🔥', url=CHNL_LNK),
+                InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⌬', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
-                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about')
+                InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url='https://t.me/Ansafmahim'),
+                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ ⍟', callback_data='about')
             ],[
                 InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+            ],[
+                InlineKeyboardButton('💫 𝗖𝗥𝗘𝗔𝗧𝗢𝗥 💫', url='https://t.me/Prime_Nayem')
             ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('🤖 Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ 🤖', callback_data='clone')])
