@@ -27,7 +27,7 @@ async def save_group(bot, message):
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
-                InlineKeyboardButton('Support', url=f'https://t.me/Prime_Admin_Support_ProBot')
+                InlineKeyboardButton('Support', url=GRP_LNK)
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
@@ -43,9 +43,9 @@ async def save_group(bot, message):
             return
         buttons = [[
                     InlineKeyboardButton('🔥 𝐏𝐑𝐈𝐌𝐄 𝐁𝐎𝐓`𝐒 🔥', url='https://t.me/Prime_Botz'),
-                    InlineKeyboardButton('✨ 𝐏𝐑𝐈𝐌𝐄 𝐌𝐎𝐕𝐈𝐄𝐒 ✨', url=CHNL_LNK)
+                    InlineKeyboardButton('✨ Robin Cinema ✨', url=CHNL_LNK)
                  ],[
-                    InlineKeyboardButton("〄 𝗔𝗗𝗠𝗜𝗡 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 〄", url="https://t.me/Prime_Bots_Support_RoBot")
+                    InlineKeyboardButton("〄 𝗔𝗗𝗠𝗜𝗡 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 〄", url="https://t.me/Ansafmahim")
                   ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -92,9 +92,9 @@ async def leave_a_chat(bot, message):
     try:
         buttons = [[
             InlineKeyboardButton('🔥 𝙋𝙍𝙄𝙈𝙀 𝘽𝙊𝙏𝙨 🔥',url="https://t.me/Prime_Botz"),
-            InlineKeyboardButton("❤️‍🔥 Bᴏᴛ Oᴡɴᴇʀ ❤️‍🔥", url="t.me/Prime_Nayem")
+            InlineKeyboardButton("🧑‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ: ❤️‍🔥", url="t.me/Prime_Nayem")
         ],[
-            InlineKeyboardButton('〄 𝗔𝗗𝗠𝗜𝗡 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 〄', url=f'https://t.me/Prime_Bots_Support_RoBot')
+            InlineKeyboardButton('〄 𝗔𝗗𝗠𝗜𝗡 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 〄', url=f'https://t.me/Ansafmahim')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
@@ -133,7 +133,7 @@ async def disable_chat(bot, message):
     await message.reply('Chat Successfully Disabled')
     try:
         buttons = [[
-            InlineKeyboardButton('Support', url=f'https://t.me/Prime_Bots_Support_RoBot')
+            InlineKeyboardButton('Support', url=GRP_LNK)
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
