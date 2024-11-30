@@ -12,7 +12,9 @@ class script(object):
 ɪᴛ ɪs ᴇᴀsʏ ᴛᴏ ᴜsᴇ ᴍᴇ, ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴍᴀᴋᴇ ᴍᴇ ᴀs ᴀᴅᴍɪɴ
 
 
-‣ My ᴅᴇᴠᴇʟᴏᴘᴇʀ/Owner ❤️‍🔥➠ <a href=https://t.me/Prime_Nayem>𝗠𝗥.𝗣𝗥𝗜𝗠𝗘</a></b>"""
+‣ My Owner ❤️‍🔥➠ <a href=https://t.me/Ansafmahim>Azizul</a>
+
+<blockquote>🌿 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/Prime_Botz">ᴘʀɪᴍᴇ ʙᴏᴛᴢ</a></blockquote></b>"""
 
     CLONE_START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
     
@@ -24,10 +26,10 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
     ABOUT_TXT = """<b><blockquote>⍟───[ MY ᴅᴇᴛᴀɪʟꜱ ]───⍟</blockquote>
     
 ‣ ᴍʏ ɴᴀᴍᴇ : <a href=https://t.me/{}>{}</a>
-‣ ᴍʏ ʙᴇsᴛ ғʀɪᴇɴᴅ : <a href='tg://settings'>ᴛʜɪs ᴘᴇʀsᴏɴ</a> 
-‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/Prime_Nayem'>s.ʜ ɴᴀʏᴇᴍ</a> 
-‣ 𝙵ʀᴏᴍ : <a href='https://t.me/Prime_Botz'>ᴘʀɪᴍᴇ Bᴏᴛ's</a> 
-‣ Mᴀɪɴ Cʜᴀɴɴᴇʟ : <a href='https://t.me/Prime_Movies4U'>ᴘʀɪᴍᴇ ᴍᴏᴠɪᴇ ✨</a> 
+‣ ᴍʏ ʙᴇsᴛ ғʀɪᴇɴᴅ : <a href='tg://settings'>ᴛʜɪs ᴘᴇʀsᴏɴ</a>
+‣ ᴏᴡɴᴇʀ: <a href='https://t.me/Ansafmahim'>Azizul</a> 
+‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/Prime_Nayem'>ᴍʀ.ᴘʀɪᴍᴇ</a> 
+‣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : <a href='https://t.me/Prime_Botz'>ᴘʀɪᴍᴇ Bᴏᴛ's</a> 
 ‣ ᴅᴀᴛᴀ ʙᴀsᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a> 
 ‣ ʙᴏᴛ sᴇʀᴠᴇʀ : <a href='https://heroku.com'>ʜᴇʀᴏᴋᴜ</a> 
 ‣ ʙᴜɪʟᴅ sᴛᴀᴛᴜs : ᴠ2.7.1 [sᴛᴀʙʟᴇ]></b>"""
@@ -236,7 +238,7 @@ PRIME MOVIES SEARCH BOT"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>⚡File uploaded by [𝐏𝐑𝐈𝐌𝐄 𝐌𝐎𝐕𝐈𝐄 ✨](https://t.me/Prime_Movies4U)</b>⚡\n\n📂 Fɪʟᴇɴᴀᴍᴇ : <i><a href='https://telegram.me/Prime_Movies4U'>{file_name}</a></i>\n\n\n» 𝗡𝗘𝗪 𝗠𝗢𝗩𝗜𝗘𝗦 ➠ <a href=https://t.me/+NO6RGoj16Fw2Njc9>𝐏𝐑𝐈𝐌𝐄 𝐌𝐎𝐕𝐈𝐄𝐒 𝐀𝐃𝐃𝐀</a>\n\n\n𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 : <a href=https://t.me/Prime_Botz>𝐏𝐑𝐈𝐌𝐄 𝐁𝐎𝐓𝐳 🔥</a></b>""" 
+    CAPTION = """<b>⚡File uploaded by [Robin Cinema ✨](https://t.me/RobincinemaBenDub)</b>⚡\n\n📂 Fɪʟᴇɴᴀᴍᴇ : <i><a href='https://telegram.me/RobincinemaBenDub'>{file_name}</a></i>\n\n\n𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 : <a href=https://t.me/Prime_Botz>ᴘʀɪᴍᴇ ʙᴏᴛᴢ</a></b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
@@ -459,7 +461,7 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 ⏰ Tɪᴍᴇ : <code>{}</code>
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
 🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v2.7.1 [ Sᴛᴀʙʟᴇ ]</code></b>
-PRIME MOVIES SEARCH BOT"""
+Robin Cinema"""
 
     LOGO = """
 
