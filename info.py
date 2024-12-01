@@ -108,8 +108,8 @@ VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/Prime_Movie_Watch
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'teraboxlinks.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '99b8fbf7c183af5fbc81b798a6f627400aa6d843')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'https://thunderlinks.site')
+SHORTLINK_API = environ.get('SHORTLINK_API', '30d4ff9b59cce0454622d003302b0db556f21346')
 
 # Others
 MAX_B_TN = environ.get("MAX_B_TN", "5")
