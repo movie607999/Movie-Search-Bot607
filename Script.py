@@ -238,7 +238,7 @@ Robin Cinema"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>⚡File uploaded by [Robin Cinema ✨](https://t.me/RobincinemaBenDub)</b>⚡\n\n📂 Fɪʟᴇɴᴀᴍᴇ : <i><a href='https://telegram.me/RobincinemaBenDub'>{file_name}</a></i>\n\n\n𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 : <a href=https://t.me/Prime_Botz>ᴘʀɪᴍᴇ ʙᴏᴛᴢ</a></b>""" 
+    CAPTION = """<b>⚡File uploaded by [Robin Cinema ✨](https://t.me/RobincinemaBenDub)</b>⚡\n\n📂 Fɪʟᴇɴᴀᴍᴇ : <i><a href='https://telegram.me/Prime_Botz'>{file_name}</a></i>\n\n\nJoin Now : <a href=https://t.me/robincinema>Robin Cinema Update Channel🌟</a></b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
