@@ -74,7 +74,7 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'pri_Nay1') # Public Ch
 # Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/flixabin_chat')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/RobincinemaBenDub')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Prime_Movie_Watch_Dawnload/60')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Prime_Movie_Watch_Dawnload/79')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'RobincinemaBenDub') # Support Chat Link Without https:// or @
 
 # True Or False
@@ -107,9 +107,9 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/Prime_Movie_Watch_Dawnload/76')
 
 # Shortlink Info
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'teraboxlinks.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '99b8fbf7c183af5fbc81b798a6f627400aa6d843')
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'thunderlinks.site')
+SHORTLINK_API = environ.get('SHORTLINK_API', '30d4ff9b59cce0454622d003302b0db556f21346')
 
 # Others
 MAX_B_TN = environ.get("MAX_B_TN", "5")
