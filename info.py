@@ -31,8 +31,8 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5
 
 # Admins, Channels & Users
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002184630716'))
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7057105056').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002193995843').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6324615401').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002042031815').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
@@ -73,8 +73,8 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'pri_Nay1') # Public Ch
 
 # Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/flixabin_chat')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/RobincinemaBenDub')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Prime_Movie_Watch_Dawnload/79')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/robincinema')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/robincinema/8')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'RobincinemaBenDub') # Support Chat Link Without https:// or @
 
 # True Or False
@@ -108,8 +108,8 @@ VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/Prime_Movie_Watch
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'thunderlinks.site')
-SHORTLINK_API = environ.get('SHORTLINK_API', '30d4ff9b59cce0454622d003302b0db556f21346')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'gplinks.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '7fcd55c9a2e0a17ad0eaf06ad0209327ced0d7d2')
 
 # Others
 MAX_B_TN = environ.get("MAX_B_TN", "5")
