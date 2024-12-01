@@ -73,9 +73,9 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'pri_Nay1') # Public Ch
 
 # Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/flixabin_chat')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/robincinema')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/RobincinemaBenDub')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/robincinema/8')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'RobincinemaBenDub') # Support Chat Link Without https:// or @
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'robincinema') # Support Chat Link Without https:// or @
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
