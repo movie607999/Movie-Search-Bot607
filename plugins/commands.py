@@ -483,7 +483,9 @@ async def start(client, message):
                     btn = [[
                         InlineKeyboardButton("🔥 Verify 🔥", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                     ],[
-                        InlineKeyboardButton("✅ How To Open Link & Verify ✅", url=VERIFY_TUTORIAL)                  
+                        InlineKeyboardButton("✅ How To Open Link & Verify ✅", url=VERIFY_TUTORIAL)
+                    ],[
+                        InlineKeyboardButton("⭐ 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 𝗚𝗲𝘁 𝗗𝗶𝗿𝗲𝗰𝘁 𝗙𝗶𝗹𝗲 ⭐", callback_data="buy_premium")
                      ]]
                     await message.reply_text(
                         text="<b>You are not verified !\nKindly verify to continue !\n\nJust Verify One Time And Get \nMovies For next 24hr without any \nverification (Ad)\n\nশুধু একবার verify করুন এবং পরবর্তী !\n24 ঘন্টার জন্য কোনো Ad ছাড়াই সিনেমা পান \n\n🔻verify 🔥 এ ক্লিক করুন verified করতে \n\n🔻(How to Open Link & verify✅ এ‌ ক্লিক করে কিভাবে verify করবেন তা দেখে নিন)\n\nClick The Button Below To Check How to Open Link & Verify✅ See verified tutorial</b>",
@@ -558,7 +560,9 @@ async def start(client, message):
                     btn = [[
                         InlineKeyboardButton("🔥 Verify 🔥", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                     ],[
-                        InlineKeyboardButton("✅ How To Open Link & Verify ✅", url=VERIFY_TUTORIAL)                    
+                        InlineKeyboardButton("✅ How To Open Link & Verify ✅", url=VERIFY_TUTORIAL)
+                    ],[
+                        InlineKeyboardButton("⭐ 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 𝗚𝗲𝘁 𝗗𝗶𝗿𝗲𝗰𝘁 𝗙𝗶𝗹𝗲 ⭐", callback_data="buy_premium")
                      ]]
                     await message.reply_text(
                         text="<b>You are not verified !\nKindly verify to continue !\n\nJust Verify One Time And Get \nMovies For next 24hr without any \nverification (Ad)\n\nশুধু একবার verify করুন এবং পরবর্তী !\n24 ঘন্টার জন্য কোনো Ad ছাড়াই সিনেমা পান \n\n🔻verify 🔥 এ ক্লিক করুন verified করতে \n\n🔻(How to Open Link & verify✅ এ‌ ক্লিক করে কিভাবে verify করবেন তা দেখে নিন)\n\nClick The Button Below To Check How to Open Link & Verify✅ See verified tutorial</b>",
@@ -632,7 +636,9 @@ async def start(client, message):
             btn = [[
                 InlineKeyboardButton("🔥 Verify 🔥", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
              ],[
-                InlineKeyboardButton("✅ How To Open Link & Verify ✅", url=VERIFY_TUTORIAL)             
+                InlineKeyboardButton("✅ How To Open Link & Verify ✅", url=VERIFY_TUTORIAL)
+             ],[
+                InlineKeyboardButton("⭐ 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 𝗚𝗲𝘁 𝗗𝗶𝗿𝗲𝗰𝘁 𝗙𝗶𝗹𝗲 ⭐", callback_data="buy_premium")
               ]]
             await message.reply_text(
                 text="<b>You are not verified !\nKindly verify to continue !\n\nJust Verify One Time And Get \nMovies For next 24hr without any \nverification (Ad)\n\nশুধু একবার verify করুন এবং পরবর্তী !\n24 ঘন্টার জন্য কোনো Ad ছাড়াই সিনেমা পান \n\n🔻verify 🔥 এ ক্লিক করুন verified করতে \n\n🔻(How to Open Link & verify✅ এ‌ ক্লিক করে কিভাবে verify করবেন তা দেখে নিন)\n\nClick The Button Below To Check How to Open Link & Verify✅ See verified tutorial</b>",
