@@ -42,10 +42,10 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-                    InlineKeyboardButton('🔥 𝐏𝐑𝐈𝐌𝐄 𝐁𝐎𝐓`𝐒 🔥', url='https://t.me/Prime_Botz'),
+                    InlineKeyboardButton('🔥 Movies Channel 🔥', url=GRP_LNK),
                     InlineKeyboardButton('✨ Robin Cinema ✨', url=CHNL_LNK)
                  ],[
-                    InlineKeyboardButton("〄 𝗔𝗗𝗠𝗜𝗡 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 〄", url="https://t.me/Ansafmahim")
+                    InlineKeyboardButton("〄 𝗔𝗗𝗠𝗜𝗡 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 〄", url=f'https://t.me/{OWNER_USERNAME}')
                   ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -66,9 +66,7 @@ async def save_group(bot, message):
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
                                                                            InlineKeyboardButton('⌬ Aʟʟ Mᴏᴠɪᴇs Cʜᴀɴɴᴇʟ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                                                                           InlineKeyboardButton('✪ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✪', url=CHNL_LNK)
-                                                                       ],[
-                                                                           InlineKeyboardButton("🔥 𝙋𝙍𝙄𝙈𝙀 𝘽𝙊𝙏𝙨 🔥", url='https://t.me/Prime_Botz')
+                                                                           InlineKeyboardButton('✪ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✪', url=CHNL_LNK)                                                      
                                                                        ],[
                                                                            InlineKeyboardButton("🔍 𝗧𝗵𝗲 𝗣𝗿𝗶𝗺𝗲 𝗠𝗼𝘃𝗶𝗲𝘀 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗚𝗿𝗼𝘂𝗽 🔎", url=GRP_LNK)
                                                                          ]]
@@ -91,10 +89,10 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('🔥 𝙋𝙍𝙄𝙈𝙀 𝘽𝙊𝙏𝙨 🔥',url="https://t.me/Prime_Botz"),
-            InlineKeyboardButton("🧑‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ: ❤️‍🔥", url="t.me/Prime_Nayem")
+            InlineKeyboardButton('🔥 Group 🔥',url=GRP_LNK),
+            InlineKeyboardButton("⚡ Channel ❤️‍🔥", url=CHNL_LNK)
         ],[
-            InlineKeyboardButton('〄 𝗔𝗗𝗠𝗜𝗡 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 〄', url=f'https://t.me/Ansafmahim')
+            InlineKeyboardButton('〄 𝗔𝗗𝗠𝗜𝗡 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 〄', url=f'https://t.me/{OWNER_USERNAME}')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
