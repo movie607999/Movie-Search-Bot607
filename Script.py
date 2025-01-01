@@ -163,12 +163,12 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 Gʀᴏᴜᴘ = {}(<code>{}</code>)
 Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
 Aᴅᴅᴇᴅ Bʏ - {}
-Robin Cinema"""
+"""
 
     LOG_TEXT_P = """#NewUser
 ID - <code>{}</code>
 Nᴀᴍᴇ - {}
-Robin Cinema"""
+"""
 
     ALRT_TXT = """ʜᴇʟʟᴏ {},
 ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,
@@ -229,7 +229,8 @@ Robin Cinema"""
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>⚡File uploaded by [Robin Cinema ✨](https://t.me/RobincinemaBenDub)</b>⚡\n\n📂 Fɪʟᴇɴᴀᴍᴇ : <i><a href='https://telegram.me/Prime_Botz'>{file_name}</a></i>\n\n\nJoin Now : <a href=https://t.me/robincinema>Robin Cinema Update Channel🌟</a></b>""" 
+    CAPTION = """<b>📂 Fɪʟᴇɴᴀᴍᴇ : {file_name}
+    sɪᴢᴇ ⚙️: {file_size}</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
