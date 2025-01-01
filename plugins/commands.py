@@ -32,7 +32,7 @@ async def start(client, message):
         ],[
             InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
         ],[
-            InlineKeyboardButton('💫 𝗔𝗻𝘆 𝗣𝗿𝗼𝗯𝗹𝗲𝗺 𝗖𝗼𝗻𝗻𝗲𝗰𝘁 𝗔𝗱𝗺𝗶𝗻 💫', url='https://t.me/Ansafmahim')
+            InlineKeyboardButton('💫 𝗔𝗻𝘆 𝗣𝗿𝗼𝗯𝗹𝗲𝗺 𝗖𝗼𝗻𝗻𝗲𝗰𝘁 𝗔𝗱𝗺𝗶𝗻 💫', url=f'https://t.me/{OWNER_USERNAME}')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -51,17 +51,15 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('🔥 ʀᴏʙɪɴ ᴄɪɴᴇᴍᴀ 🔥', url=CHNL_LNK),
+                InlineKeyboardButton('Main Channel', url=CHNL_LNK),
                 InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⌬', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url='https://t.me/Ansafmahim'),
+                InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url=f'https://t.me/{OWNER_USERNAME}'),
                 InlineKeyboardButton('⍟ Aʙᴏᴜᴛ ⍟', callback_data='about')
             ],[
                 InlineKeyboardButton('💳 ⭐ 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 𝗚𝗲𝘁 𝗗𝗶𝗿𝗲𝗰𝘁 𝗙𝗶𝗹𝗲 ⭐ 💳', callback_data="buy_premium")
             ],[
                 InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)       
-            ],[
-                InlineKeyboardButton('💫 𝗖𝗥𝗘𝗔𝗧𝗢𝗥 💫', url='https://t.me/Prime_Nayem')
             ]]
             
         else:
@@ -69,15 +67,12 @@ async def start(client, message):
                 InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
                 InlineKeyboardButton('🔥Mᴏᴠɪᴇ Gʀᴏᴜᴘ🔥', url=GRP_LNK),
-                InlineKeyboardButton('⌬ ʀᴏʙɪɴ ᴄɪɴᴇᴍᴀ ⌬', url=CHNL_LNK)
+                InlineKeyboardButton('⌬ Main ᴄɪɴᴇᴍᴀ ⌬', url=CHNL_LNK)
             ],[
-                InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url='https://t.me/Ansafmahim'),
+                InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url=f'https://t.me/{OWNER_USERNAME}'),
                 InlineKeyboardButton('⍟ Aʙᴏᴜᴛ ⍟', callback_data='about')
             ],[
                 InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
-
-            ],[
-                InlineKeyboardButton('💫 𝗖𝗥𝗘𝗔𝗧𝗢𝗥 💫', url='https://t.me/Prime_Nayem')
             ]]
             
         if CLONE_MODE == True:
@@ -141,32 +136,28 @@ async def start(client, message):
             buttons = [[
                 InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('🔥ʀᴏʙɪɴ ᴄɪɴᴇᴍᴀ🔥', url=CHNL_LNK),
+                InlineKeyboardButton('🔥 Main ᴄɪɴᴇᴍᴀ🔥', url=CHNL_LNK),
                 InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⌬', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url='https://t.me/Ansafmahim'),
+                InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url=f'https://t.me/{OWNER_USERNAME}'),
                 InlineKeyboardButton('⍟ Aʙᴏᴜᴛ ⍟', callback_data='about')
             ],[
                 InlineKeyboardButton('💳 ⭐ 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 𝗚𝗲𝘁 𝗗𝗶𝗿𝗲𝗰𝘁 𝗙𝗶𝗹𝗲 ⭐ 💳', callback_data="buy_premium")
             ],[
                 InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
-            ],[
-                InlineKeyboardButton('💫 𝗖𝗥𝗘𝗔𝗧𝗢𝗥 💫', url='https://t.me/Prime_Nayem')
             ]]
             
         else:
             buttons = [[
                 InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-                InlineKeyboardButton('🔥ʀᴏʙɪɴ ᴄɪɴᴇᴍᴀ🔥', url=CHNL_LNK),
+                InlineKeyboardButton('🔥Main ᴄɪɴᴇᴍᴀ🔥', url=CHNL_LNK),
                 InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⌬', url=GRP_LNK)
             ],[
-                InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url='https://t.me/Ansafmahim'),
+                InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url=f'https://t.me/{OWNER_USERNAME}'),
                 InlineKeyboardButton('⍟ Aʙᴏᴜᴛ ⍟', callback_data='about')
             ],[
                 InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
-            ],[
-                InlineKeyboardButton('💫 𝗖𝗥𝗘𝗔𝗧𝗢𝗥 💫', url='https://t.me/Prime_Nayem')
             ]]
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('🤖 Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ 🤖', callback_data='clone')])
@@ -201,10 +192,10 @@ async def start(client, message):
                 buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🔥ʀᴏʙɪɴ ᴄɪɴᴇᴍᴀ🔥', url=CHNL_LNK),
+                    InlineKeyboardButton('🔥 Main ᴄɪɴᴇᴍᴀ🔥', url=CHNL_LNK),
                     InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ ⌬', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url='https://t.me/Ansafmahim'),
+                    InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url=f'https://t.me/{OWNER_USERNAME}'),
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ ⍟', callback_data='about')
                 ],[
                     InlineKeyboardButton('💳 ⭐ 𝗥𝗲𝗺𝗼𝘃𝗲 𝗔𝗱𝘀 𝗚𝗲𝘁 𝗗𝗶𝗿𝗲𝗰𝘁 𝗙𝗶𝗹𝗲 ⭐ 💳', callback_data="buy_premium")
@@ -217,15 +208,13 @@ async def start(client, message):
                 buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🎥 ʀᴏʙɪɴ ᴄɪɴᴇᴍᴀ', url=CHNL_LNK),
+                    InlineKeyboardButton('🎥 Main ᴄɪɴᴇᴍᴀ', url=CHNL_LNK),
                     InlineKeyboardButton('⌬ Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url='https://t.me/Ansafmahim'),
+                    InlineKeyboardButton('〄 𝙰𝙳𝙼𝙸𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃 〄', url=f'https://t.me/{OWNER_USERNAME}'),
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ ⍟', callback_data='about')
                 ],[
                     InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
-                ],[
-                    InlineKeyboardButton('💫 𝗖𝗥𝗘𝗔𝗧𝗢𝗥 💫', url='https://t.me/Prime_Nayem')
                 ]]
             if CLONE_MODE == True:
                 buttons.append([InlineKeyboardButton('🤖 Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ 🤖', callback_data='clone')])
