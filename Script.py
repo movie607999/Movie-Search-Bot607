@@ -55,10 +55,6 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
     SUBSCRIPTION_TXT = """
 <b>Our Prime Movie Premium Channel is a highly interesting channel , There are millions of movies in Direct Video format. 
 
-Click Here To-👉 <a href='https://t.me/Prime_Premium_4U'>Join Prime Movies Premium</a>
-
-All Country Payment Mathod available 
-
 ʙᴜʏ ᴘᴀɪᴅ ᴘʟᴀɴ ʙʏ - /plan</b>"""
 
 
@@ -461,7 +457,7 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 ⏰ Tɪᴍᴇ : <code>{}</code>
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
 🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v2.7.1 [ Sᴛᴀʙʟᴇ ]</code></b>
-Robin Cinema"""
+"""
 
     LOGO = """
 
@@ -712,13 +708,8 @@ Connect Me 👉 t.me/Prime_Admin_Nayem
     DEVELOPER_TXT = """
 special Thanks To ❤️ Developers -
 
--Dev 1 [Owner of this bot ]<a href='https://t.me/Prime_Nayem'>Prime</a>
+-Dev 1 [Owner of this bot ]<a href='https://t.me/Maruf01666'>Maruf</a>
 
--Dev 2 <a href='https://t.me/Prime_Movies4U'>PRIME</a>
-
--Dev 3 <a href='https://t.me/+OG3sftDEbZ9kMzFl>Prime Movie Request Group</a>
-
-- Dev 4 <a href='https://t.me/Prime_Admin_Nayem'>TEAM Prime</a>
 """
 
     RENAME_TXT = """
