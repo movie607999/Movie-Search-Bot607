@@ -74,8 +74,8 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 # Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/moviebotgroup6080')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/forcsubscribe')
-TUTORIAL = environ.get('TUTORIAL', '')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Maruf01666') # Support Chat Link Without https:// or @
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/suportchannel6079/4')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'moviebotgroup6080') # Support Chat Link Without https:// or @
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
@@ -107,9 +107,9 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', '')
 
 # Shortlink Info
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
-SHORTLINK_API = environ.get('SHORTLINK_API', '')
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'teraboxlinks.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '92ed3e63164833e4e2feddc28e442b4aafc9c482')
 
 # Others
 MAX_B_TN = environ.get("MAX_B_TN", "5")
