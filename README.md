@@ -2,7 +2,7 @@
   <img src="https://envs.sh/rhd.jpg" alt="Prime-Filter-Bot Logo">
 </p>
 <h1 align="center">
-  VJ FILTER BOT
+  PRIME FILTER BOT
 </h1>
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+Prime+Filter+Bot!)
