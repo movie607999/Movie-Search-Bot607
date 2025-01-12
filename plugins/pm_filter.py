@@ -1,6 +1,7 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - https://t.me/Prime_Botz
+# Subscribe Telegram Channel For Amazing Bot https://t.me/Prime_Botz
+# Support Group Tg ➠ https://t.me/Prime_Botz_Support
+# Ask Doubt on HTTPS://T.ME/MR_PRIME_SUPREME
 
 import os, logging, string, asyncio, time, re, ast, random, math, pytz, pyrogram
 from datetime import datetime, timedelta, date, time
@@ -3430,3 +3431,9 @@ async def global_filters(client, message, text=False):
                 break
     else:
         return False
+
+
+# Don't Remove Credit Tg - https://t.me/Prime_Botz
+# Subscribe Telegram Channel For Amazing Bot https://t.me/Prime_Botz
+# Support Group Tg ➠ https://t.me/Prime_Botz_Support
+# Ask Doubt on HTTPS://T.ME/MR_PRIME_SUPREME
