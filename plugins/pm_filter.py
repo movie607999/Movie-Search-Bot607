@@ -102,35 +102,10 @@ async def next_page(bot, query):
     else:
         search = FRESH.get(key)
     if not search:
-        await query.answer(script.OLD_ALRT_TXT.format(query.from_user.first_name),show_alert=True)
+        await query.answer(script.OLD_ALRT_TXT.format(query.from_user.first_
+                                                      name),show_alert=True)
         return
-
-    temp_files, temp_offset, total_results = await get_search_results(chat_id=message.chat.id, query=search.lower(), offset=0, filter=True)
-
-image_url = get_google_image_thumbnail(search)  # মুভির ইমেজ আনার ফাংশন কল  
-if image_url:
-    results_message = f"<a href='{image_url}'>📸</a>\n\n" + results_message  # ছবির লিংক যোগ করা
-
-# সঠিকভাবে async ফাংশন ডিফাইন করুন:
-async def handle_message(message):
-    await message.reply_text("Your response here")
-    results_message,
-    disable_web_page_preview=False,  # ইমেজ থাম্বনেইল দেখাবে
-    parse_mode="HTML"
-
-# অন্যান্য ফাংশনগুলোর শেষে
-def get_google_image_thumbnail(query):
-    search_url = f"https://www.google.com/search?tbm=isch&q={query}"
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-    }
-    response = requests.get(search_url, headers=headers)
-    if response.status_code == 200:
-        image_urls = re.findall(r'"https://[^"]*"', response.text)
-        if image_urls:
-            return image_urls[0].strip('"')
-    return None
-    
+    files, n_offset, total = await get_search_results(query.messa ge.chat.id, search, offset=offset, filter=True)
     try:
         n_offset = int(n_offset)
     except:
