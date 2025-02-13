@@ -31,13 +31,6 @@ from aiohttp import web
 from plugins import web_server
 from plugins.clone import restart_bots
 
-# নতুন ফিচারের জন্য ইমপোর্ট
-from plugins.google_image import get_movie_poster
-from plugins.imdb_info import get_movie_info
-from plugins.search_limit import check_search_limit
-from plugins.admin_ban import *
-from plugins.admin_logs import *
-
 from TechVJ.bot import TechVJBot
 from TechVJ.util.keepalive import ping_server
 from TechVJ.bot.clients import initialize_clients
@@ -64,47 +57,28 @@ async def start():
             spec.loader.exec_module(load)
             sys.modules["plugins." + plugin_name] = load
             print("Tech VJ Imported => " + plugin_name)
-
-    # Google Image থেকে মুভির পোস্টার এবং IMDb তথ্য আনছে
-    movie_name = "Inception"
-    poster = await get_movie_poster(movie_name)
-    movie_info = await get_movie_info(movie_name)
-
-    if movie_info:
-        print(f"📽️ {movie_info['title']} ({movie_info['year']}) - ⭐ {movie_info['rating']}")
-        print(f"📖 Plot: {movie_info['plot']}")
-        print(f"🖼️ Poster: {movie_info['poster'] or poster}")
-    else:
-        print("❌ মুভির তথ্য পাওয়া যায়নি!")
-
     if ON_HEROKU:
         asyncio.create_task(ping_server())
-
     b_users, b_chats = await db.get_banned()
     temp.BANNED_USERS = b_users
     temp.BANNED_CHATS = b_chats
     await Media.ensure_indexes()
-
     me = await TechVJBot.get_me()
     temp.BOT = TechVJBot
     temp.ME = me.id
     temp.U_NAME = me.username
     temp.B_NAME = me.first_name
-
     logging.info(LOG_STR)
     logging.info(script.LOGO)
-
     tz = pytz.timezone('Asia/Kolkata')
     today = date.today()
     now = datetime.now(tz)
     time = now.strftime("%H:%M:%S %p")
     await TechVJBot.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
-
-    if CLONE_MODE:
+    if CLONE_MODE == True:
         print("Restarting All Clone Bots.......")
         await restart_bots()
         print("Restarted All Clone Bots.")
-
     app = web.AppRunner(await web_server())
     await app.setup()
     bind_address = "0.0.0.0"
