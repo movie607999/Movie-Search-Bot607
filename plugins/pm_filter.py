@@ -102,10 +102,10 @@ async def next_page(bot, query):
     else:
         search = FRESH.get(key)
     if not search:
-        await query.answer(script.OLD_ALRT_TXT.format(query.from_user.first_
-                                                      name),show_alert=True)
+        await query.answer(script.OLD_ALRT_TXT.format(query.from_user.first_name),show_alert=True)
         return
-    files, n_offset, total = await get_search_results(query.messa ge.chat.id, search, offset=offset, filter=True)
+
+    files, n_offset, total = await get_search_results(query.message.chat.id, search, offset=offset, filter=True)
     try:
         n_offset = int(n_offset)
     except:
