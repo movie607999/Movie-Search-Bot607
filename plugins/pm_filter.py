@@ -111,7 +111,9 @@ image_url = get_google_image_thumbnail(search)  # মুভির ইমেজ �
 if image_url:
     results_message = f"<a href='{image_url}'>📸</a>\n\n" + results_message  # ছবির লিংক যোগ করা
 
-await message.reply_text(
+# সঠিকভাবে async ফাংশন ডিফাইন করুন:
+async def handle_message(message):
+    await message.reply_text("Your response here")
     results_message,
     disable_web_page_preview=False,  # ইমেজ থাম্বনেইল দেখাবে
     parse_mode="HTML"
