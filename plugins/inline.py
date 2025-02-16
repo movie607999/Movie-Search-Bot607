@@ -70,17 +70,22 @@ async def answer(bot, query):
         try:
             movie_info = data['results'][0]  # Taking first search result
             movie_title = movie_info.get('title', 'Unknown Title')
-            movie_poster = movie_info.get('image', {}).get('url', 'No Image Available')
+            movie_poster = movie_info.get('image', {}).get('url')  
             movie_year = movie_info.get('year', 'Unknown Year')
-            movie_rating = movie_info.get('rating', 'No Rating')
+            movie_rating = movie_info.get('ratings', {}).get('rating', 'No Rating')
+
+            # Default Image if IMDb API does not return an image
+            if not movie_poster:
+                movie_poster = "https://via.placeholder.com/300x450?text=No+Image"
+
         except (IndexError, KeyError):
             movie_title = string
-            movie_poster = "No Image Available"
+            movie_poster = "https://via.placeholder.com/300x450?text=No+Image"
             movie_year = "Unknown Year"
             movie_rating = "No Rating"
     else:
         movie_title = string
-        movie_poster = "No Image Available"
+        movie_poster = "https://via.placeholder.com/300x450?text=No+Image"
         movie_year = "Unknown Year"
         movie_rating = "No Rating"
 
@@ -90,7 +95,8 @@ async def answer(bot, query):
             photo_url=movie_poster,
             title=f"{movie_title} ({movie_year})",
             description=f"IMDb Rating: {movie_rating}",
-            caption=f"🎬 {movie_title} ({movie_year})\\n⭐ IMDb Rating: {movie_rating}",
+            caption=f"🎬 <b>{movie_title}</b> ({movie_year})\n⭐ <b>IMDb Rating:</b> {movie_rating}",
+            parse_mode="html",
             reply_markup=reply_markup
         )
     )
