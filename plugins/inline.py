@@ -3,9 +3,10 @@
 # Ask Doubt on telegram @KingVJ01
 
 import logging
+import requests
 from pyrogram import Client, emoji, filters
 from pyrogram.errors.exceptions.bad_request_400 import QueryIdInvalid
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InlineQueryResultCachedDocument, InlineQuery
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InlineQueryResultPhoto, InlineQueryResultCachedDocument, InlineQuery
 from database.ia_filterdb import get_search_results
 from utils import is_subscribed, get_size, temp
 from info import CACHE_TIME, AUTH_USERS, AUTH_CHANNEL, CUSTOM_FILE_CAPTION
@@ -54,6 +55,47 @@ async def answer(bot, query):
 
     offset = int(query.offset or 0)
     reply_markup = get_reply_markup(query=string)
+
+    # Fetch movie details from IMDb API (RapidAPI)
+    url = "https://imdb8.p.rapidapi.com/title/find"
+    headers = {
+        "X-RapidAPI-Key": "ca6dbf9407msh61bd2e5c7e991dap1de329jsn47ad675ee76d",  # তোমার API Key
+        "X-RapidAPI-Host": "imdb8.p.rapidapi.com"
+    }
+    params = {"q": string}
+    
+    response = requests.get(url, headers=headers, params=params)
+    if response.status_code == 200:
+        data = response.json()
+        try:
+            movie_info = data['results'][0]  # Taking first search result
+            movie_title = movie_info.get('title', 'Unknown Title')
+            movie_poster = movie_info.get('image', {}).get('url', 'No Image Available')
+            movie_year = movie_info.get('year', 'Unknown Year')
+            movie_rating = movie_info.get('rating', 'No Rating')
+        except (IndexError, KeyError):
+            movie_title = string
+            movie_poster = "No Image Available"
+            movie_year = "Unknown Year"
+            movie_rating = "No Rating"
+    else:
+        movie_title = string
+        movie_poster = "No Image Available"
+        movie_year = "Unknown Year"
+        movie_rating = "No Rating"
+
+    # Adding movie image result
+    results.append(
+        InlineQueryResultPhoto(
+            photo_url=movie_poster,
+            title=f"{movie_title} ({movie_year})",
+            description=f"IMDb Rating: {movie_rating}",
+            caption=f"🎬 {movie_title} ({movie_year})\\n⭐ IMDb Rating: {movie_rating}",
+            reply_markup=reply_markup
+        )
+    )
+
+    # Fetch movie quality and other files
     files, next_offset, total = await get_search_results(
                                                   chat_id,
                                                   string,
@@ -113,9 +155,5 @@ def get_reply_markup(query):
         [
             InlineKeyboardButton('Search again', switch_inline_query_current_chat=query)
         ]
-        ]
+    ]
     return InlineKeyboardMarkup(buttons)
-
-
-
-
